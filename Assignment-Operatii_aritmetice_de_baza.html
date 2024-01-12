@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment: program pentru efectuarea operatiilor aritmetice de baza</title>
+    </head>
+    
+    <body>
+        <script>
+            
+        function calcul() {
+            var x = parseInt(prompt("Introduceti primul numar:"));
+            var operatie = prompt("Introduceti tipul operatiei: +, -, *, /");
+            var y = parseInt(prompt("Introduceti al doilea numar:"));
+            var rezultat;
+            switch (operatie) {
+                case "+":
+                    rezultat = x + y;
+                    break;
+                case "-":
+                    rezultat = x - y;
+                    break;
+                case "*":
+                    rezultat = x * y;
+                    break;
+                case "/":
+                    rezultat = x / y;
+                    break;
+                default:
+                    alert("Operatie invalida! Introduceti tipul operatiei!");
+                    break;
+                }
+                document.write("Rezultatul este: " + rezultat);
+            }
+                calcul();
+        
+        </script>
+    </body>
+</html>
